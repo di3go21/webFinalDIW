@@ -22,7 +22,7 @@
     */
     body {
       background-image: url("/img/2845167.jpg");
-     
+
     }
 
     nav {
@@ -39,20 +39,24 @@
     footer {
       background-color: #aa8976;
       margin: auto;
-      position: absolute;
-      bottom: 0;
       width: 100%;
     }
+
     hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-ul {
-  list-style-type: "@";
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+      list-style-type: "@";
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .fotos img {
+      width: 100%;
+    }
   </style>
 </head>
 
@@ -102,9 +106,58 @@ ul {
 
 
 
-    <section>
-  
-    </section>
+  <section class="container">
+
+    <h1>¡Estas son algunas muestras de lo que podemos hacer!</h1>
+    <h2>Imágenes</h2>
+    <div class="row fotos">
+
+      <div class="col-md-2 col-lg-4">
+        <p>Cáncavas de Guadalajara</p>
+        <img src="/img/lascarcavas.jpg" alt="imagen aérea de las Cárcavas de Guadalajara">
+      </div>
+
+      <div class="col-md-2 col-lg-4">
+        <p>Río Aceña</p>
+        <img src="/img/rioacena.jpg" alt="imagen aérea del río Aceña">
+      </div>
+      <div class="col-md-2 col-lg-4">
+        <p>Magallón</p>
+        <img src="/img/magallon.jpg" alt="imagen aérea de magallon">
+      </div>
+      <div class="col-md-2 col-lg-4">
+        <p>Pasarelas Montfalcó</p>
+        <img src="/img/pasarelasmontfalco.jpg" alt="imagen aérea de las pasarelas de Montfalcó">
+      </div>
+      <div class="col-md-2 col-lg-4">
+        <p>Pasarelas Montfalcó 2</p>
+        <img src="/img/pasarelasmontfalco2.jpg" alt="imagen aérea de las pasarelas de Montfalcó">
+      </div>
+      <div class="col-md-2 col-lg-4">
+        <p>Ordesa</p>
+        <img src="/img/ordesa.jpg" alt="imagen aérea de Ordesa">
+      </div>
+
+    </div>
+
+    <h2>Vídeos</h2>
+    <div class="row fotos justify-content-center">
+
+      <div class="col-12 col-lg-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ejuj_xsTMx8"></iframe>
+        </div>
+
+      </div>
+
+      <div class=" col-12 col-lg-6 mt-5 mt-lg-0">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nOoK5f-H0Wk"></iframe>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
 
 
