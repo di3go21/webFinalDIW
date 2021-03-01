@@ -11,55 +11,12 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./../css/bootstrap.css">
+  <link rel="stylesheet" href="./../css/micss.css">
   <!-- Inconos Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
   <style>
-    /*paleta
-    
-    c6ebc9
-    70af85
-    f0e2d0
-    aa8976   
-    
-    */
-    body {
-      background-image: url("/img/fondo_textura.jpg");
-
-    }
-
-    nav {
-      background-color: #2c8d4c;
-
-    }
-
-    footer a {
-      background-color: #aa8976;
-      color: whitesmoke;
-      margin: auto;
-    }
-
-    footer {
-      background-color: #aa8976;
-      margin: auto;
-      /* position: absolute;
-      bottom: 0; */
-      width: 100%;
-    }
-
-    hr {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      border: 0;
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
-    }
-
-    ul {
-      list-style-type: "@";
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
 
     .bi {
-
       font-size: 5rem;
     }
 
@@ -80,10 +37,12 @@
 </head>
 
 <body>
+  
+  <a id="arriba"></a>
   <div class="container-fluid">
-    <div><a href="mapaweb.html"> Mapa web</a>
-      <p>imagen WCAG W3C etc</p>
-    </div>
+    <div><a class="btn btn-primary btn-sm" href="mapaweb.html"> Mapa web</a>
+      <img class="wcag" src="/img/wcag2.0.png" alt="logo de wcag 2.0">
+  </div>
 
     <!-- navegación -->
     <nav class="navbar navbar-expand-md navbar-dark rounded">
@@ -104,7 +63,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle " href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">Conócenos</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown09">
+            <div class="dropdown-menu" >
               <a class="dropdown-item" href="empresa.html">Empresa</a>
               <a class="dropdown-item" href="nosotros.html">Nosotros</a>
               <a class="dropdown-item" href="javascript:void(0)">Servicios <span class="sr-only">(current)</span></a>
@@ -115,7 +74,9 @@
             <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
         </ul>
-
+        <form class="form-inline my-2 my-md-0">
+          <input class="form-control" type="text" placeholder="Buscar..." aria-label="Search">
+        </form>
       </div>
     </nav>
 
@@ -174,7 +135,7 @@
       </div>
 
     </div>
-  </section><!-- #services -->
+  </section>
 
 
 
@@ -209,9 +170,12 @@
   </footer>
 
 
+<!-- Boton para subir al principio sin hacer scroll-->
+<a id="botonSubir" class="btn btn-lg btn-primary" href="#arriba">Ir a arriba</a>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
+  <script src="./../js/mijs.js"></script>
   <script src="./../js/jquery-3.5.1.js"></script>
   <script src="./../js/bootstrap.bundle.js"></script>
 </body>
