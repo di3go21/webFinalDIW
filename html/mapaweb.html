@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <title>Mapa web</title>
@@ -21,8 +21,8 @@
     
     */
     body {
-      background-image: url("/img/2845167.jpg");
-     
+      background-image: url("/img/fondo_textura.jpg");
+
     }
 
     nav {
@@ -43,16 +43,22 @@
       bottom: 0;
       width: 100%;
     }
+
     hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-ul {
-  list-style-type: "@";
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+      list-style-type: "@";
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    section li{
+      padding-top: 20px;
+      font-size: 40px;
+    }
   </style>
 </head>
 
@@ -96,18 +102,23 @@ ul {
       </div>
     </nav>
 
+    <div class="mt-3  text-primary">
+      <a class="btn btn-primary" href="home.html">Inicio</a> -> <a class="btn btn-primary" href="mapaweb.html">Mapa Web</a> 
+  </div>
+
 
   </div>
 
 
 
 
-    <section>
-      <div class="container">
-        <h1 class="display-3">Mapa web:</h1>
-        <hr>
+  <section>
+    <div class="container">
+      <h1 class="display-3 mt-5">Mapa web:</h1>
+      <hr>
+      <ul>
+        <li><a href="home.html">Inicio</a>
         <ul>
-          <li><a href="home.html">Inicio</a></li>
           <li><a href="empresa.html">Empresa</a>
             <ul>
               <li><a href="nosotros.html">Nosotros</a></li>
@@ -115,12 +126,15 @@ ul {
               <li><a href="portfolio.html">Portfolio</a></li>
             </ul>
           </li>
-          
+  
           <li><a href="contacto.html">Contacto</a></li>
-        </ul>
 
-      </div>
-    </section>
+        </ul></li>
+        
+      </ul>
+
+    </div>
+  </section>
 
 
 
